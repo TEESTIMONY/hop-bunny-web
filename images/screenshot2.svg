@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Sky Background -->
+  <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#39547B" />
+    <stop offset="100%" stop-color="#1C2841" />
+  </linearGradient>
+  <rect width="800" height="500" fill="url(#skyGradient)" />
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle cx="100" cy="50" r="2" fill="white" opacity="0.8" />
+    <circle cx="200" cy="80" r="1.5" fill="white" opacity="0.7" />
+    <circle cx="300" cy="40" r="2" fill="white" opacity="0.9" />
+    <circle cx="400" cy="90" r="1" fill="white" opacity="0.8" />
+    <circle cx="500" cy="60" r="2.5" fill="white" opacity="0.7" />
+    <circle cx="600" cy="30" r="1.8" fill="white" opacity="0.9" />
+    <circle cx="700" cy="70" r="1.2" fill="white" opacity="0.8" />
+    <circle cx="150" cy="120" r="1.7" fill="white" opacity="0.7" />
+    <circle cx="250" cy="150" r="1" fill="white" opacity="0.9" />
+    <circle cx="350" cy="180" r="2" fill="white" opacity="0.8" />
+    <circle cx="450" cy="130" r="1.5" fill="white" opacity="0.7" />
+    <circle cx="550" cy="160" r="1.8" fill="white" opacity="0.9" />
+    <circle cx="650" cy="140" r="1.2" fill="white" opacity="0.8" />
+    <circle cx="750" cy="110" r="2" fill="white" opacity="0.7" />
+  </g>
+  
+  <!-- Moon -->
+  <circle cx="700" cy="80" r="40" fill="#F8F8FF" opacity="0.8" />
+  <circle cx="680" cy="70" r="10" fill="#39547B" opacity="0.5" />
+  <circle cx="710" cy="90" r="8" fill="#39547B" opacity="0.5" />
+  
+  <!-- Hills -->
+  <path d="M0,500 Q200,380 400,450 Q600,380 800,440 L800,500 Z" fill="#1C2841" opacity="0.9" />
+  
+  <!-- Ground -->
+  <rect x="0" y="480" width="800" height="20" fill="#1C2841" />
+  
+  <!-- Platforms -->
+  <rect x="50" y="400" width="100" height="15" rx="5" fill="#39547B" />
+  <rect x="200" y="350" width="80" height="15" rx="5" fill="#39547B" />
+  <rect x="330" y="300" width="70" height="15" rx="5" fill="#71A744" />
+  <rect x="450" y="250" width="90" height="15" rx="5" fill="#A83232" />
+  <rect x="600" y="200" width="120" height="15" rx="5" fill="#39547B" />
+  
+  <!-- Disappearing Platform -->
+  <g transform="translate(390, 370)">
+    <rect x="-40" y="0" width="80" height="15" rx="5" fill="#A83232" opacity="0.7" />
+    <line x1="-30" y1="8" x2="30" y2="8" stroke="white" stroke-width="2" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Moving Platform -->
+  <g transform="translate(550, 320)">
+    <rect x="-40" y="0" width="80" height="15" rx="5" fill="#71A744" />
+    <path d="M-25,8 L-15,8 M15,8 L25,8" stroke="white" stroke-width="2" />
+    <polygon points="-30,7 -20,4 -20,10" fill="white" />
+    <polygon points="30,7 20,4 20,10" fill="white" />
+  </g>
+  
+  <!-- Score -->
+  <rect x="20" y="20" width="120" height="40" rx="10" fill="rgba(0,0,0,0.5)" />
+  <text x="40" y="47" font-family="Arial, sans-serif" font-size="24" fill="white">3850</text>
+  
+  <!-- Bunny Character with Shield -->
+  <g transform="translate(100, 370)">
+    <!-- Shield Effect -->
+    <circle cx="0" cy="0" r="35" fill="rgba(65, 105, 225, 0.3)" />
+    <circle cx="0" cy="0" r="30" fill="none" stroke="rgba(65, 105, 225, 0.8)" stroke-width="2" stroke-dasharray="5,3" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="20" ry="25" fill="#FFFFFF" />
+    
+    <!-- Hoodie -->
+    <path d="M-20,0 Q-10,30 0,30 Q10,30 20,0" fill="#39547B" />
+    
+    <!-- Ears -->
+    <path d="M-10,-20 Q-15,-40 -8,-45 Q0,-40 0,-20" fill="#FFFFFF" stroke="#39547B" stroke-width="1" />
+    <path d="M10,-20 Q15,-40 8,-45 Q0,-40 0,-20" fill="#FFFFFF" stroke="#39547B" stroke-width="1" />
+    
+    <!-- Face -->
+    <circle cx="-8" cy="-8" r="3" fill="#333333" />
+    <circle cx="8" cy="-8" r="3" fill="#333333" />
+    <path d="M-5,5 Q0,10 5,5" stroke="#333333" stroke-width="1.5" fill="none" />
+    
+    <!-- Gold Chain -->
+    <path d="M-10,10 Q0,15 10,10" stroke="#FFD700" stroke-width="2" fill="none" />
+    <circle cx="0" cy="12" r="2" fill="#FFD700" />
+  </g>
+  
+  <!-- Static Enemy -->
+  <g transform="translate(450, 220)">
+    <!-- Spikes -->
+    <path d="M-20,-5 L-15,-15 L-10,-5 L-5,-15 L0,-5 L5,-15 L10,-5 L15,-15 L20,-5" stroke="#A83232" stroke-width="2" fill="none" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="20" fill="#4B5320" />
+    
+    <!-- Suit -->
+    <rect x="-12" y="-5" width="24" height="25" rx="5" fill="#333333" />
+    
+    <!-- Face -->
+    <circle cx="-5" cy="-8" r="3" fill="white" />
+    <circle cx="5" cy="-8" r="3" fill="white" />
+    <circle cx="-5" cy="-8" r="1" fill="black" />
+    <circle cx="5" cy="-8" r="1" fill="black" />
+    <path d="M-5,0 Q0,5 5,0" stroke="#A83232" stroke-width="2" fill="none" />
+    
+    <!-- Tie -->
+    <path d="M0,-5 L-5,5 L0,15 L5,5 Z" fill="#A83232" />
+    
+    <!-- Warning Glow -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#A83232" stroke-width="2" opacity="0.5" />
+  </g>
+  
+  <!-- Flying Enemy -->
+  <g transform="translate(600, 170)">
+    <!-- Wings -->
+    <path d="M-15,0 Q-25,-15 -15,-20 Q-5,-15 -15,0" fill="#71A744" opacity="0.9" />
+    <path d="M15,0 Q25,-15 15,-20 Q5,-15 15,0" fill="#71A744" opacity="0.9" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="20" fill="#71A744" />
+    
+    <!-- Suit -->
+    <rect x="-12" y="-5" width="24" height="25" rx="5" fill="#333333" />
+    
+    <!-- Face -->
+    <circle cx="-5" cy="-8" r="3" fill="white" />
+    <circle cx="5" cy="-8" r="3" fill="white" />
+    <circle cx="-5" cy="-8" r="1" fill="black" />
+    <circle cx="5" cy="-8" r="1" fill="black" />
+    <path d="M-6,0 Q0,-5 6,0" stroke="#A83232" stroke-width="2" fill="none" />
+    
+    <!-- Tie -->
+    <path d="M0,-5 L-5,5 L0,15 L5,5 Z" fill="#A83232" />
+  </g>
+  
+  <!-- Chasing Enemy -->
+  <g transform="translate(250, 320)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="20" fill="#4B5320" />
+    
+    <!-- Suit -->
+    <rect x="-12" y="-5" width="24" height="25" rx="5" fill="#333333" />
+    
+    <!-- Face -->
+    <circle cx="-5" cy="-8" r="3" fill="white" />
+    <circle cx="5" cy="-8" r="3" fill="white" />
+    <circle cx="-6" cy="-8" r="1" fill="black" />
+    <circle cx="4" cy="-8" r="1" fill="black" />
+    <path d="M-8,0 Q0,8 8,0" stroke="#A83232" stroke-width="2" fill="none" />
+    
+    <!-- Tie -->
+    <path d="M0,-5 L-5,5 L0,15 L5,5 Z" fill="#A83232" />
+    
+    <!-- Movement Lines -->
+    <line x1="-20" y1="0" x2="-25" y2="0" stroke="white" stroke-width="2" stroke-dasharray="2,1" />
+    <line x1="-20" y1="5" x2="-25" y2="5" stroke="white" stroke-width="2" stroke-dasharray="2,1" />
+    <line x1="-20" y1="-5" x2="-25" y2="-5" stroke="white" stroke-width="2" stroke-dasharray="2,1" />
+  </g>
+  
+  <!-- Power-ups -->
+  <!-- Coin -->
+  <g transform="translate(350, 270)">
+    <circle cx="0" cy="0" r="12" fill="#FFD700" opacity="0.8" />
+    <text x="-5" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">$</text>
+    <!-- Glow -->
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5" />
+  </g>
+  
+  <!-- Jetpack -->
+  <g transform="translate(550, 290)">
+    <rect x="-10" y="-15" width="20" height="30" rx="5" fill="#71A744" />
+    <path d="M-10,5 L-15,15 M10,5 L15,15" stroke="#FF4500" stroke-width="2" />
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#71A744" stroke-width="1" opacity="0.5" />
+  </g>
+  
+  <!-- UI Elements -->
+  <g transform="translate(740, 30)">
+    <rect x="-30" y="-20" width="60" height="40" rx="10" fill="rgba(255,255,255,0.2)" />
+    <text x="-20" y="5" font-family="Arial, sans-serif" font-size="14" fill="white">MENU</text>
+  </g>
+  
+  <!-- Height Indicator -->
+  <g transform="translate(30, 200)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="white" stroke-width="1" opacity="0.5" />
+    <text x="30" y="5" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.7">3000m</text>
+  </g>
+</svg> 
