@@ -166,12 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const playButton = document.querySelector('.play-game-btn');
     if (playButton) {
         playButton.addEventListener('click', function(e) {
-            e.preventDefault();
             // Add pulse animation when clicked
             this.classList.add('animate__animated', 'animate__pulse');
-            
-            // Show a message or redirect to game
-            alert('Game coming soon! Stay tuned for the release.');
             
             // Remove animation classes after animation ends
             setTimeout(() => {
